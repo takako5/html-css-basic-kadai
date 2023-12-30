@@ -1,0 +1,79 @@
+header {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0px 20px 0px 0px;
+  background-color: rgb(244, 79, 79);
+}
+h1 {
+  margin: 10px;
+  color: rgb(255, 255, 255);
+}
+main {
+  margin: 10px;
+}
+#parent {
+  display: flex;
+  justify-content: space-around;
+}
+#parent p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+.contents {
+  flex-basis: 25%;
+  margin: 20px 0px;
+  padding: 10px 15px;
+  text-align: center;
+  border: solid 3px rgb(238, 204, 204);
+}
+.contents img {
+  margin: 10px 0px;
+  width: 70%;
+}
+h2::before {
+  content: "⚫︎";
+  color: pink;
+  text-align: center;
+}
+h2 {
+  border-bottom: dotted 5px pink;
+  text-align: center;
+  font-size: 25px;
+}
+p {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+}
+a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+a:visited{
+  color: rgb(193, 234, 251);
+}
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+footer::first-line {
+  color: rgb(255, 255, 255);
+}
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+@media screen and (max-width:768px) {
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+  #parent {
+    flex-direction: column;
+  }
+}
